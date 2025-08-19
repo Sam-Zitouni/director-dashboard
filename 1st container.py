@@ -18,11 +18,11 @@ COLOR_PALETTE = ["#89CFF0", "#FFB6C1"]  # baby blue, baby pink
 # ------------- DB helpers -------------
 @st.cache_resource
 def get_engine():
-    user = os.getenv("readonly_user")
-    pwd = os.getenv("uJz8o99awc")
-    host = os.getenv("51.178.30.30")
-    port = os.getenv("5433", "5432")
-    db = os.getenv("rawahel_test")
+    user = os.getenv("")
+    pwd = os.getenv("")
+    host = os.getenv("")
+    port = os.getenv("", "")
+    db = os.getenv("")
 
     if not all([user, pwd, host, db]):
         raise RuntimeError("Missing DB credentials in environment variables.")
