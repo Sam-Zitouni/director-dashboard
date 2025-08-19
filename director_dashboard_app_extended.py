@@ -1,13 +1,3 @@
-# This cell creates a NEW extended Streamlit app with all Director KPIs & visuals,
-# designed to work against your live PostgreSQL DB (same one you access via Adminer).
-# It detects available columns at runtime and gracefully degrades with clear messages
-# when a KPI needs fields that your schema doesn't have.
-#
-# Run:  streamlit run director_dashboard_app_extended.py
-
-from textwrap import dedent
-
-extended_code = dedent(r'''
 import os
 import datetime as dt
 from typing import Dict, List, Tuple, Optional
@@ -515,9 +505,4 @@ if not df_pay.empty:
     st.download_button("📊 Download revenue report (CSV)", data=csv_rev, file_name="revenue_daily.csv", mime="text/csv")
 
 st.caption("🗺 Explore route analytics & ✏ Edit pricing would require write access and forms — out of scope for read-only BI, but can be added if needed.")
-''')
 
-with open('/mnt/data/director_dashboard_app_extended.py', 'w', encoding='utf-8') as f:
-    f.write(extended_code)
-
-'/mnt/data/director_dashboard_app_extended.py'
