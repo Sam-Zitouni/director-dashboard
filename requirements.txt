@@ -1,6 +1,6 @@
 streamlit
-pandas
-plotly
 sqlalchemy
-python-dotenv
 psycopg2-binary
+pandas
+numpy
+matplotlib
