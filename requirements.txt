@@ -1,6 +1,7 @@
-streamlit
-sqlalchemy
-psycopg2-binary
-pandas
-numpy
-matplotlib
+streamlit>=1.33
+sqlalchemy>=2.0
+psycopg2-binary>=2.9
+pandas>=2.0
+numpy>=1.24
+plotly>=5.20
+python-dotenv>=1.0  # optional, if you load env vars locally
