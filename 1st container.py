@@ -73,7 +73,7 @@ def column_exists(schema: str, table: str, column: str) -> bool:
     return not df.empty
 
 # Helper: safe ratio
-ndef ratio(n, d):
+def ratio(n, d):
     try:
         n = float(n)
         d = float(d)
